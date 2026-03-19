@@ -51,8 +51,8 @@
                                             {{ $product->name }}
                                         </td>
                                         <td class="px-6 py-4 text-gray-600 dark:text-gray-300">
-                                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {{ $product->quantity > 10 ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' : 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300' }}">
-                                                {{ $product->quantity }}
+                                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {{ $product->qty > 10 ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' : 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300' }}">
+                                                {{ $product->qty }}
                                             </span>
                                         </td>
                                         <td class="px-6 py-4 text-gray-700 dark:text-gray-200 font-mono">
