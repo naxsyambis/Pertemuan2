@@ -46,6 +46,22 @@ Pada pertemuan ini dilakukan implementasi **Entity Relationship Diagram (ERD)** 
 
 ---
 
+# Praktikum Laravel – Pertemuan 4
+
+Pada pertemuan ini dilakukan implementasi **CRUD, dan Validasi Input**.
+
+## Dokumentasi Hasil Pengujian
+
+| Fitur                  | Screenshot                                                                                                                                      |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Tabel Product add**  | <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6083655d-8861-4a6f-8d77-3862090f709f" />            |
+| **Tampilan add**       | <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5a2d3b08-1e70-40cd-b465-66fb16378a1e" />            |
+| **Tampilan Edit**      | <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/eb80328a-e8ed-4639-b441-d65102f5310d" />            |
+| **Tampilan Detail**    | <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7d66c214-9b88-4658-a9a9-07c38e5b6f00" />            |
+| **Tampilan delete**    | <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/750ec868-51ea-4f7a-af7b-80420507876c" />            |
+
+---
+
 # Teknologi yang Digunakan
 
 * **Laravel**
