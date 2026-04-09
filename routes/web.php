@@ -30,6 +30,7 @@ Route::middleware('auth')->group(function () {
     Route::put('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
     Route::get('/product/edit/{product}', [ProductController::class, 'edit'])->name('product.edit');
     Route::delete('/product/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
+    Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 });
 
 require __DIR__.'/auth.php';
