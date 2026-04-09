@@ -62,6 +62,25 @@ Pada pertemuan ini dilakukan implementasi **CRUD, dan Validasi Input**.
 
 ---
 
+# Praktikum Laravel – Pertemuan 5
+
+Pada pertemuan ini dilakukan implementasi **Gate dan Policy**.
+
+## Dokumentasi Hasil Pengujian
+
+| Fitur                        | Screenshot                                                                                                               |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Tambah atribut role**      | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/e339b310-2a1a-4e3d-9001-03ea1bcc2e73" /> |
+| **Database tambah role**     | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/c620c097-c875-4673-900c-108169d3f2d1" /> |
+| **Gate Manage Product**      | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/25dc6c23-22d7-43f1-be68-73a2e2cccf15" /> |
+| **Penerapan Gate pada View** | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/824622d4-e726-4aa6-abbc-272ed5069938" /> |
+| **Gate pada Route**          | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/714546de-2c95-4e8e-87d4-92356caf0d29" /> |
+| **Product Policy**           | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/4bec0b52-cfb8-4b4a-9943-22c63d2300d7" /> |
+| **Tampilan User**            | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/4f757a4c-b457-47a5-bcc4-ac5d288306db" /> |
+| **Tampilan Admin**           | <img width="1920" height="1080" src="https://github.com/user-attachments/assets/bd3cf56d-b4d3-4ad1-b89f-da2ca1e4fa2c" /> |
+
+---
+
 # Teknologi yang Digunakan
 
 * **Laravel**
