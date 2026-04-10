@@ -46,6 +46,7 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         $product = Product::findOrFail($id);
+        $this->authorize('update', $product); // Cek Policy update
 
         $validated = $request->validate([
             'name' => 'sometimes|string|max:255',
@@ -61,6 +62,7 @@ class ProductController extends Controller
 
     public function edit(Product $product)
     {
+        $this->authorize('update', $product); 
         $users = User::orderBy('name')->get();
 
         return view('product.edit', compact('product', 'users'));
@@ -69,9 +71,9 @@ class ProductController extends Controller
     public function delete($id)
     {
         $product = Product::findOrFail($id);
+        $this->authorize('delete', $product); // Cek Policy delete
 
         $product->delete();
-
         return redirect()->route('product.index')->with('success', 'Product berhasil dihapus');
     }
 }
