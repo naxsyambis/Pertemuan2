@@ -5,28 +5,23 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
+use App\Http\Requests\StoreProductRequest;
 
 class ProductController extends Controller
 {
     public function index()
     {
         $products = Product::all();
-
         return view('product.index', compact('products'));
     }
 
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'qty' => 'required|integer',
-            'price' => 'required|numeric',
-            'user_id' => 'required|exists:users,id',
-        ]);
+        Product::create($request->validated());
 
-        $product = Product::create($validated);
-
-        return redirect()->route('product.index')->with('success', 'Product created successfully.');
+        return redirect()->route('product.index')
+            ->with('success', 'Product created successfully.');
     }
 
     public function create()

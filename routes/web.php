@@ -20,6 +20,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/product/export', [ProductController::class, 'export'])
+        ->middleware('can:export-product')
+        ->name('product.export');
+
+    Route::resource('product', ProductController::class);
 });
 
 Route::middleware('auth')->group(function () {
