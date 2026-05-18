@@ -2,27 +2,40 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
+    /**
+     * Mengaktifkan fitur timestamps otomatis (created_at dan updated_at).
+     */
+    public $timestamps = true;
 
+    /**
+     * Mendefinisikan kolom mana saja yang boleh diisi secara massal (mass assignment).
+     */
     protected $fillable = [
-        'user_id',
-        'name',
-        'qty',
-        'price'
+        'user_id',     
+        'category_id', 
+        'name',       
+        'quantity',    
+        'price'       
     ];
 
+    /**
+     * Menunjukkan bahwa satu produk dimiliki oleh satu User (Owner).
+     */
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    public function categories()
+    /**
+     * Menunjukkan bahwa satu produk termasuk dalam satu kategori tertentu.
+     * 'category_id' digunakan sebagai foreign key di tabel products.
+     */
+    public function kategori()
     {
-        return $this->hasMany(Category::class);
+        return $this->belongsTo(Kategori::class, 'category_id');
     }
 }
